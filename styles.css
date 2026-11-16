@@ -1,0 +1,148 @@
+/* Mohammed Ahmed
+   i263118
+   SE-C
+   Lab 12 */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: #d0ff00;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: blue;
+    font-size: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 40px;
+    gap: 30px;
+}
+
+.hero-text {
+    width: 45%;
+}
+
+.hero-text h2 {
+    color: blue;
+    font-size: 36px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+}
+
+button {
+    transition: 0.3s;
+    background-color: #d0ff00;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b5df00;
+}
+
+.features {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    color: blue;
+    font-size: 30px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px gray;
+}
+
+.feature-card h3 {
+    color: blue;
+}
+
+.feature-card p {
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
